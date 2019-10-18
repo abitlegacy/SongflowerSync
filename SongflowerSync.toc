@@ -1,0 +1,8 @@
+## Interface: 11302
+## Title: SongflowerSync
+## Version: 1.0
+## Notes: Shows a blocking UI element to assist raids into not being bad with Songflowers.
+## DefaultState: enabled
+## Author: Raipin
+
+SongflowerSync.lua
