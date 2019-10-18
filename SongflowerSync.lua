@@ -19,6 +19,7 @@ end
 
 SLASH_SONGFLOWERSYNC1 = "/pick"
 SlashCmdList["SONGFLOWERSYNC"] = function(msg)
+	if RightClickDisabled == true then return end
    DBM:CreatePizzaTimer(10, "Click Flower!", true);
 end
 
