@@ -21,6 +21,3 @@ SlashCmdList["SONGFLOWERSYNC"] = function(msg)
    DBM:CreatePizzaTimer(10, "Click Flower!", true);
    DBM:Schedule(10, enableRightClick)
 end
-
-DBM:RegisterCallback("DBM_TimerStart", disableRightClick);
-DBM:RegisterCallback("DBM_TimerStop", enableRightClick);
