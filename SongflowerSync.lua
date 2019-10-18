@@ -1,11 +1,11 @@
 local RightClickDisabled = false;
-local function disableRightClick(_, _, text)
+local function disableRightClick(_, _, text, time)
 	if text == "Click Flower!" then
+		DBM:Schedule(time, function ()
+			RightClickDisabled = false;
+		end)
 		RightClickDisabled = true;
 	end
-end
-local function enableRightClick()
-	RightClickDisabled = false;
 end
 
 WorldFrame:HookScript(
@@ -20,7 +20,6 @@ end
 SLASH_SONGFLOWERSYNC1 = "/pick"
 SlashCmdList["SONGFLOWERSYNC"] = function(msg)
    DBM:CreatePizzaTimer(10, "Click Flower!", true);
-   DBM:Schedule(10, enableRightClick)
 end
 
 DBM:RegisterCallback("DBM_TimerStart", disableRightClick);
