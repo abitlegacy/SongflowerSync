@@ -1,0 +1,9 @@
+{
+    "Lua.diagnostics.globals": [
+        "SlashCmdList",
+        "DBM",
+        "WorldFrame",
+        "MouselookStop",
+        "CreateFrame"
+    ]
+}
